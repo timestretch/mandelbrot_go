@@ -7,7 +7,7 @@ Run unit tests:
 
 	$ go test
 	PASS
-	ok  	github.com/timestretch/mandelbrot	0.107s
+	ok  	github.com/timestretch/mandelbrot_go	0.107s
 
 Run benchmark:
 
@@ -16,7 +16,7 @@ Run benchmark:
 	PASS
 	BenchmarkMandelbrotRender-2        	       1	2895848939 ns/op
 	BenchmarkMandelbrotRenderParallel-2	       1	1434169071 ns/op
-	ok  	github.com/timestretch/mandelbrot	4.460s
+	ok  	github.com/timestretch/mandelbrot_go	4.460s
 
 MIT License
 -------
