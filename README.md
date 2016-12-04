@@ -5,18 +5,62 @@ Mandelbrot set rendering in golang with parallel and non parallel version.
 
 Run unit tests:
 
-	$ go test
+	go test
+
+Results:
+
 	PASS
-	ok  	github.com/timestretch/mandelbrot_go	0.107s
+	ok  	github.com/timestretch/mandelbrot_go/mandelbrot	0.041s
 
 Run benchmark:
 
-	$ go test -bench=".*"
+	go test -bench=".*"
 
+Results:
+
+	BenchmarkMandelbrotRender-4           	       1	32014223686 ns/op
+	BenchmarkMandelbrotRenderParallel-4   	       1	10662301401 ns/op
 	PASS
-	BenchmarkMandelbrotRender-2        	       1	2895848939 ns/op
-	BenchmarkMandelbrotRenderParallel-2	       1	1434169071 ns/op
-	ok  	github.com/timestretch/mandelbrot_go	4.460s
+	ok  	github.com/timestretch/mandelbrot_go/mandelbrot	42.729s
+
+Render:
+
+	cd render
+	go build
+	./render 60 30
+
+Results:
+
+	                              #                             
+	                              #                             
+	                              #                             
+	                             ###                            
+	                            #####                           
+	                         ###########                        
+	                        #############                       
+	                       ###############                      
+	                       ###############                      
+	                        #############                       
+	                         ###########                        
+	                            #####                           
+	                       ###############                      
+	                 # ####################### #                
+	                #############################               
+	            #####################################           
+	              #################################             
+	           #######################################          
+	           #######################################          
+	           #######################################          
+	      #################################################     
+	    #####################################################   
+	      ###  #######################################  ###     
+	            #####################################           
+	            #####################################           
+	             ###################################            
+	               ###############################              
+	             ### ############# ############# ###            
+	                    # ####         #### #                   
+	                                                            
 
 MIT License
 -------

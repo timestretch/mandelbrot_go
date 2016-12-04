@@ -53,10 +53,10 @@ func TestMandelbrotRenderCompareParallel40(t *testing.T) {
 // go test -bench=".*"
 
 func BenchmarkMandelbrotRender(b *testing.B) {
-	RenderSet(400,400)
+	RenderSet(2000,2000)
 }
 
 func BenchmarkMandelbrotRenderParallel(b *testing.B) {
-	RenderSetParallel(400,400)
+	RenderSetParallel(2000,2000)
 }
 
